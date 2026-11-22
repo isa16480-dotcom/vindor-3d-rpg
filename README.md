@@ -15,6 +15,7 @@ de Foundry (pause, combats, jetons, fiches, droits). On peut l'activer ou le dé
 |---|---|---|
 | **B** | MJ | Mode fantôme : caméra libre invisible pour les joueurs, traverse murs et bâtiments. ZQSD : avancer dans la direction du regard · clic + glisser : regarder · **Espace** : monter · **Ctrl** : descendre · **Maj** : 3 × plus vite · molette : vitesse · **B** : retour au personnage (qui n'a pas bougé). Depuis la carte 2D, B ouvre la 3D directement en mode fantôme. |
 | **C** | tous | Caméra tactique : vue aérienne, le personnage reste immobile. ZQSD : déplacer la vue · molette : zoom · clic + glisser : tourner. Distances (nom + distance de chaque personnage, distance du repère) dans les unités de la scène. Joueurs : pas de traversée des murs ni des portes fermées, rayon maximal réglable (60 m). MJ : sans limite. **C** : retour. |
+| **T** | tous | Ciblage : **clic** sur un personnage = cible principale · **Maj + clic** = ajouter / retirer une cible (plusieurs cibles) · clic sur sa seule cible = la retirer · **clic droit** = tout retirer · **T** ou **Échap** = terminer. Ce sont les cibles natives de Foundry : la carte 2D, le MJ et les autres joueurs les voient aussitôt (et un ciblage fait en 2D apparaît en 3D). |
 | **M** | tous | Bascule vue 3D ⇄ carte de combat. La caméra 3D est retrouvée telle quelle au retour. Inactive pendant qu'on écrit (chat, champs, fiches). |
 | **Espace** | MJ | Pause générale (pause native de Foundry, partagée par tous) : les joueurs ne peuvent plus bouger. |
 | Espace | joueurs | Rien : **le saut est supprimé**. |
@@ -27,9 +28,19 @@ ouvre la fiche pour les joueurs (cela remplace le menu du jeton, désactivé par
 Les touches B, C, M se changent dans *Configurer les contrôles* → *Vindor 3D — RPG*. Hors de la 3D, C garde son rôle natif
 (ouvrir sa fiche) et T son rôle natif (cibler).
 
+## Cibles
+- Sous chaque cible : un cercle animé à la couleur du joueur qui cible (plusieurs joueurs sur la même cible = cercles
+  emboîtés). Ses propres cibles ont un chevron au-dessus de la tête ; la cible principale est plus grande et pulse.
+- Étiquette de ses cibles : nom, distance depuis son personnage (unités de la scène), et **points de vie + CA seulement si
+  Foundry le permet** (MJ, propriétaire ou observateur).
+- En mode ciblage ou pendant un combat : ligne pointillée de son personnage vers sa cible principale.
+
 ## Combats
 - Au début d'un combat Foundry : pause automatique, annonce « Le combat commence » en 3D pour chacun et message dans le chat,
   bordure rouge discrète pendant tout le combat. L'ordre d'initiative n'est pas touché.
+- **Posture** : pendant le combat, à l'arrêt, chaque personnage se tourne vers la cible principale de son joueur
+  (les PNJ vers la cible du MJ). L'animation de garde (« combat idle ») arrive à l'étape 3.
+- Les vieux combats vides ou oubliés (sans combattant, ou sans scène et inactifs) sont ignorés.
 - À la fin : le mode combat s'arrête. **La pause n'est jamais levée automatiquement** : le MJ relance avec Espace.
 
 ## Apparition et disparition des personnages
@@ -44,8 +55,8 @@ pause automatique au combat, annonce du combat, désintégration (oui/non, duré
 Joueurs : distances en caméra tactique, regarder vers le ciel.
 
 ## Feuille de route (étapes suivantes)
-Ce module est construit par étapes. Déjà fait : **étape 1** (ci-dessus). À venir :
-- **Étape 2** — ciblage **T** (cible principale, cibles multiples, cercle sous l'ennemi, distance, synchronisation via les cibles natives de Foundry), posture de combat.
+Ce module est construit par étapes. Déjà fait : **étape 1** (caméras, pause, combats, fiches, apparition / disparition)
+et **étape 2** (ciblage T, posture de combat). À venir :
 - **Étape 3** — animations de combat (garde, attaque, parade, esquive, dégâts, mort, victoire, sorts, gestes) reciblées dans Unreal Engine ; tête qui suit la caméra.
 - **Étape 4** — armes 3D tirées de la fiche (épée, dague, lance, arc, arbalète, bâton, livre, bouclier) attachées aux os.
 - **Étape 5** — attaques et sorts D&D 5e (activités dnd5e 5.x) : animation + effet visuel + son, résolution par le système de règles ; projectiles (flèches, boule de feu).
