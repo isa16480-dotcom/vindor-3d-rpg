@@ -56,6 +56,13 @@ Les touches B, C, M se changent dans *Configurer les contrôles* → *Vindor 3D 
   l'on regarde. Les autres personnages regardent leur cible.
 - Bibliothèque : 67 animations (Quaternius UAL 1 et 2, CC0, reciblées dans Unreal Engine 5.8 ; gestes Vindor créés
   sur le même squelette). Un modèle sans ces animations garde son comportement habituel.
+- **Autres systèmes que dnd5e** (0.4.3, ex. Chroniques Oubliées) : un jet dont le titre nomme une arme ou une capacité
+  d'attaque du personnage (ou une arme de rencontre), ou un jet « Attaque au contact / à distance / magique », déclenche
+  l'attaque. Les jets de dégâts, de soins et de compétences n'animent rien.
+- **Geste « Attaquer »** (0.4.3, menu G) : joue le coup d'arme à la demande, tourné vers la cible de l'utilisateur.
+- **Figurines à attaque seule** (0.4.3) : un modèle qui n'a que « Idle » et « Sword_Attack » (ex. figurine Tripo
+  riggée pour ses coups) reste immobile, se déplace comme une pièce (mode pion) et joue son coup à chaque attaque
+  (arme lourde, lance, mains nues ou arme lancée comprises).
 - Les vieux combats vides ou oubliés (sans combattant, ou sans scène et inactifs) sont ignorés.
 - À la fin : le mode combat s'arrête. **La pause n'est jamais levée automatiquement** : le MJ relance avec Espace.
 
@@ -91,7 +98,9 @@ quand le jeton bouge (glissé sur la carte 2D, déplacé au clavier, bougé par 
 3. elle se **repose** avec un petit choc, un « toc » et un nuage de poussière autour du socle.
 
 - Fonctionne pour tout le monde (chaque joueur voit l'animation chez lui), y compris pour son propre personnage.
-- Les modèles **animés** (garde chevalier, troupe Vindor) ne sont pas concernés : ils marchent normalement.
+- Les modèles **animés qui marchent** (garde chevalier, troupe Vindor) ne sont pas concernés : ils marchent normalement.
+  Une figurine qui n'anime que ses attaques se déplace comme une pièce (0.4.3).
+- Correctif 0.4.3 : le bouton Mini-carte se replace bien à gauche de la barre latérale quand on rouvre la vue 3D.
 - Option : appliquer aussi le mode pion aux **figurines par défaut** (jetons sans modèle 3D).
 - Un très long déplacement (plus de 60 m, téléportation) reste instantané.
 - Nécessite Vindor 3D 0.9.1 ou plus (avec 0.9.0, la figurine se soulève mais commence à glisser tout de suite).
