@@ -60,12 +60,17 @@ Les touches B, C, M se changent dans *Configurer les contrôles* → *Vindor 3D 
 - À la fin : le mode combat s'arrête. **La pause n'est jamais levée automatiquement** : le MJ relance avec Espace.
 
 ## Mini-carte 2D du MJ (0.4)
-Dans la vue 3D, le MJ a un bouton **Carte 2D** en haut à droite : une petite fenêtre montre la carte de la scène et
+Dans la vue 3D, le MJ a un bouton **Mini-carte** en haut à droite : une petite fenêtre montre la carte de la scène et
 tous ses jetons (les joueurs ne la voient pas).
-- **Clic** sur un jeton : il est sélectionné (aussi sur la carte de Foundry) ; **Maj + clic** : plusieurs jetons.
-- **Glisser** : le jeton change de case (calé sur la grille) ; en 3D, le personnage marche jusqu'à sa nouvelle place.
-- **Suppr** (ou la corbeille) : supprime les jetons sélectionnés ; **Échap** : désélectionne.
-- **Molette** : zoom ; glisser le fond : déplacer la vue ; bouton **⤢** : recentrer ; **double clic** : fiche du personnage.
+- **Clic** sur un jeton : il est sélectionné (aussi sur la carte de Foundry) ; **Maj + clic** : ajouter / retirer.
+- **Clic gauche glissé sur le fond** : rectangle de sélection (plusieurs jetons d'un coup ; Maj : ajouter).
+- **Glisser un jeton** : il change de case avec toute la sélection (calé sur la grille) ; en 3D, les personnages marchent.
+- **Clic droit sur un jeton** : menu comme le HUD de la carte 2D, pour toute la sélection — fiche, visible / invisible,
+  ajouter / retirer du combat, cibler, états (à terre, mort, inconscient, étourdi, empoigné, invisible…), supprimer.
+- En-tête : nombre de jetons sélectionnés et boutons **combat**, **visible / invisible**, **supprimer** pour la sélection.
+- **Suppr** : supprime la sélection (rien n'est sélectionné à l'ouverture) ; **Échap** : ferme le menu, puis désélectionne.
+- **Molette** : zoom ; **clic droit glissé** (ou clic molette) : déplacer la vue ; bouton **⤢** : recentrer ;
+  **double clic** : fiche du personnage. Sur la mini-carte : point orange = en combat, anneau rouge = ciblé.
 - La fenêtre se redimensionne par son coin inférieur droit.
 - **Nouveau jeton** (0.4.1) : ouvrez l'onglet **Acteurs** (ou un **compendium**) dans la barre latérale de droite — elle
   reste utilisable en vue 3D : cliquez une icône pour ouvrir un panneau, recliquez pour le fermer — puis glissez l'acteur
