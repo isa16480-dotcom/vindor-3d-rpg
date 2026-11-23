@@ -78,6 +78,10 @@ tous ses jetons (les joueurs ne la voient pas).
 - **Suppr** : supprime la sélection (rien n'est sélectionné à l'ouverture) ; **Échap** : ferme le menu, puis désélectionne.
 - **Molette** : zoom ; **clic droit glissé** (ou clic molette) : déplacer la vue ; bouton **⤢** : recentrer ;
   **double clic** : fiche du personnage. Sur la mini-carte : point orange = en combat, anneau rouge = ciblé.
+- **Orientation** (0.4.4) : chaque jeton a une petite pointe qui montre où il regarde. Autour des jetons sélectionnés,
+  un **anneau orange** avec une poignée : glisser la poignée fait tourner le jeton vers la souris (par pas de 5°,
+  **Maj** : par 45°), toute la sélection tourne du même angle, et en 3D les personnages se tournent en direct.
+  **Clic droit** avec deux jetons sélectionnés : **Face à face** (chacun se tourne vers l'autre).
 - La fenêtre se redimensionne par son coin inférieur droit.
 - **Nouveau jeton** (0.4.1) : ouvrez l'onglet **Acteurs** (ou un **compendium**) dans la barre latérale de droite — elle
   reste utilisable en vue 3D : cliquez une icône pour ouvrir un panneau, recliquez pour le fermer — puis glissez l'acteur
