@@ -67,6 +67,10 @@ tous ses jetons (les joueurs ne la voient pas).
 - **Suppr** (ou la corbeille) : supprime les jetons sélectionnés ; **Échap** : désélectionne.
 - **Molette** : zoom ; glisser le fond : déplacer la vue ; bouton **⤢** : recentrer ; **double clic** : fiche du personnage.
 - La fenêtre se redimensionne par son coin inférieur droit.
+- **Nouveau jeton** (0.4.1) : ouvrez l'onglet **Acteurs** (ou un **compendium**) dans la barre latérale de droite — elle
+  reste utilisable en vue 3D : cliquez une icône pour ouvrir un panneau, recliquez pour le fermer — puis glissez l'acteur
+  sur la mini-carte : le jeton est créé à cet endroit (Alt : caché ; Maj : sans calage sur la grille). La mini-carte se
+  place toute seule à gauche du panneau ouvert.
 
 ## Marche et course des personnages animés (0.4, avec Vindor 3D 0.9.1)
 - Les personnages animés **marchent** à leur vraie allure (environ 1,2 m/s, jambes à la bonne cadence) au lieu de trottiner.
